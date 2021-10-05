@@ -358,6 +358,8 @@ header img {
 
 .image-cover {
     width: 100%;
+    border-radius: 2em;
+    overflow: hidden;
 }
 
 .image-cover img {
@@ -400,6 +402,7 @@ header img {
 .contact .row {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .contact .row .col {
@@ -426,6 +429,7 @@ header img {
     border-color: var(--main-color) var(--second-color);
     border-style: solid;
     border-width: 2px;
+    border-radius: 2em;
     animation: border-anim 3s infinite;
 }
 
@@ -483,4 +487,14 @@ header img {
 .my-email {
     font-size: 12pt;
     font-weight: bold;
+}
+
+.text-col {
+    text-align: left;
+    border-bottom: 0.2px dashed;
+}
+
+.text-col p {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

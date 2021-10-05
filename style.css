@@ -83,9 +83,15 @@ nav {
     position: fixed;
     top: 5%;
     left: -100%;
-    /* border: 0.5px solid var(--second-color); */
+    /*border: 0.5px solid var(--second-color);
+    */
     border-radius: 2em;
     z-index: 999;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 #menu {
@@ -144,7 +150,29 @@ nav .Main-List li a {
     text-align: left;
 }
 
-nav .Main-List .Drop {}
+nav .Main-List .Drop {
+    display: none;
+}
+
+nav .Main-List li:hover .Drop {
+    display: block;
+}
+
+nav .Main-List li:hover a {
+    font-size: 26px;
+}
+
+.fa-caret-down {
+    transform: rotate( 90deg);
+}
+
+nav .Main-List li:hover .fa-caret-down {
+    transform: rotate( 0deg);
+    -webkit-transform: rotate( 0deg);
+    -moz-transform: rotate( 0deg);
+    -ms-transform: rotate( 0deg);
+    -o-transform: rotate( 0deg);
+}
 
 nav .Main-List .Drop li {}
 
@@ -377,7 +405,7 @@ header img {
 .contact .row .col form {}
 
 .contact .row .col form input {
-    width: 70%;
+    width: 100%;
     padding: 1% 0 2% 1%;
     margin: 0 2% 2% 0;
     font-size: 20px;
@@ -410,3 +438,31 @@ header img {
 .contact .row .col form input[type="Email"] {}
 
 .contact .row .col form input[type="submit"] {}
+
+.contact .row .col svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 3px 8px;
+}
+
+.contact .row .col svg:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.me {
+    text-align: center;
+}
+
+.me a {
+    text-decoration: underline;
+}
+
+.me svg {
+    width: 20px;
+    height: 12px;
+    margin: 0 10px 3px 8px;
+}

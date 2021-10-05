@@ -479,3 +479,8 @@ header img {
     height: 12px;
     margin: 0 10px 3px 8px;
 }
+
+.my-email {
+    font-size: 12pt;
+    font-weight: bold;
+}

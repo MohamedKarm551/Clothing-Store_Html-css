@@ -290,7 +290,7 @@ header img {
     margin: auto;
 }
 
-.garllary .row:nth-of-type(2) {
+.garllary .row:nth-of-type(3) {
     flex-direction: row-reverse;
 }
 
@@ -349,6 +349,11 @@ header img {
 
 .garllary .col .image {
     width: 95%;
+    overflow: hidden;
+}
+
+.garllary .col .image:hover img {
+    transform: scale(1.1);
 }
 
 .image-cover {
@@ -357,6 +362,11 @@ header img {
 
 .image-cover img {
     width: 100%;
+    filter: grayscale(100%);
+}
+
+.image-cover:hover img {
+    filter: grayscale(0%);
 }
 
 .garllary .col .image img {
@@ -383,7 +393,9 @@ header img {
 
 /*  */
 
-.contact {}
+.contact {
+    margin-top: 5%;
+}
 
 .contact .row {
     display: flex;
@@ -455,6 +467,7 @@ header img {
 
 .me {
     text-align: center;
+    padding: 2%;
 }
 
 .me a {
